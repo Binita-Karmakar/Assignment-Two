@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness</title>
     <link rel="stylesheet" href="styles/fitness.css">
+    <script src="https://kit.fontawesome.com/e75bc42427.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="inter-normal">
-    <header>
-        <nav>
+    <header class="header">
+        <!-- nav part -->
+        <nav class="display-flex">
             <h2 class="nav-title">Fitness</h2>
-            <div>
-                <ul class="navbar">
-                    <li><span class="home">Home</span></li>
-                    <li>Service</li>
-                    <li>Contact</li>
-                    <li>About</li>
-                </ul>
+            <ul class="navbar display-flex">
+                <li><a href="" class="home">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+            <div class="bar-icon">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
+        <section class="banner display-flex">
+            <div class="banner-content">
+                <h1 class="banner-title white-1">Get body in <span class="miama-normal">shape</span> & stay healthy</h1>
+                <p class="banner-description white-2">A huge selection of health and fitness content, healthy recipes
+                    and transformation stories to help you get fit and stay fit!</p>
+                <div class="btn-banner">
+                    <button class="btn-primary">Join Club Now!</button>
+                    <button class="btn-primary-2">Download App</button>
+                </div>
+            </div>
+            <div>
+                <img class="banner-profile-pic" src="images/Images 2.png" alt="a healthy person image">
+                <div class="video-badge">
+                    <h3>500+</h3>
+                    <p>Free Workout Videos</p>
+                </div>
+                <div class="video-badge-2 display-flex">
+                    <i id="video-play-icon" class="fa-solid fa-circle-play"></i>
+                    <div>
+                        <h3>350+</h3>
+                        <p>Video Tutorial</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
 
@@ -27,4 +57,5 @@
 
     </footer>
 </body>
+
 </html>
