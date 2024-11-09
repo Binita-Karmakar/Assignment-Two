@@ -22,9 +22,6 @@ body {
 }
 
 /* shared styles */
-.header {
-    background-image: linear-gradient(rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
-}
 
 .white-1 {
     color: #ffffff;
@@ -38,10 +35,24 @@ body {
     display: flex;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.section-width-margin {
+    /* margin: auto 10%; */
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* header style */
+.header {
+    background-image: linear-gradient(rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
+}
+
 /* nav styles */
 
 nav {
-    margin: auto 200px;
     align-items: center;
     justify-content: space-between;
 }
@@ -78,10 +89,11 @@ nav {
     display: none;
 }
 
+/* banner section style */
 .banner {
-    margin: auto 200px;
     /* justify-content: space-around; */
     gap: 180px;
+    margin-bottom: 100px;
 }
 
 .banner-content {
@@ -179,15 +191,64 @@ nav {
     font-size: 30px;
 }
 
+/* change your habit section style */
+
+.change-your-habit {
+    padding: 0% 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 14px;
+    margin-top: 0px;
+}
+
+.section-description {
+    font-size: 0.875rem;
+    margin-bottom: 34px;
+}
+
+.habit-container .habit img {
+    border-radius: 100px;
+}
+
+.habit-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.habit {
+    padding: 40px;
+}
+
+.run-easily-section {
+    /* gap: 165px; */
+    background-color: rgba(34, 34, 34, 1);
+    /* padding: 40px 32px 40px 54px; */
+    border-radius: 18px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    margin-bottom: 100px;
+}
+
+.run-easily {
+    margin: 40px 165px 40px 54px;
+}
+
+.running-person-img img {
+    border-radius: 18px;
+    /* width: 100%; */
+    max-width: 350px;
+    margin: 40px 32px;
+}
+
 /* responsive layout for small devices */
 @media screen and (max-width: 576px) {
     .banner-content {
         width: auto;
-    }
-
-    nav,
-    .banner {
-        margin: auto 20px;
     }
 
     .navbar {
@@ -198,7 +259,8 @@ nav {
         display: block;
     }
 
-    .banner {
+    .banner,
+    .run-easily-section {
         flex-direction: column;
     }
 
@@ -209,5 +271,22 @@ nav {
 
     .video-badge-2 {
         margin-left: 0.5px;
+    }
+
+    .habit-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .change-your-habit {
+        padding: 0px 20px;
+    }
+
+    .run-easily {
+        margin: 30px;
+    }
+
+    .running-person-img img {
+        width: 100%;
+        margin: auto;
     }
 }
