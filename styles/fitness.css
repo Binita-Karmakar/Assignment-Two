@@ -121,6 +121,7 @@ nav {
     border-radius: 40px;
     border: none;
     margin-right: 14px;
+    margin-top: 24px;
 }
 
 .btn-primary-2 {
@@ -206,7 +207,7 @@ nav {
 
 .section-description {
     font-size: 0.875rem;
-    margin-bottom: 34px;
+    margin-bottom: 10px;
 }
 
 .habit-container .habit img {
@@ -245,6 +246,78 @@ nav {
     margin: 40px 32px;
 }
 
+/* BMI Calculator section style */
+.bmi-section-title {
+    width: 50%;
+    margin: 100px auto;
+    padding: 0% 10%;
+}
+
+/* BMI Calculator chart style */
+.bmi-calculator {
+    background-color: rgba(34, 34, 34, 1);
+    /* width: 75%; */
+    /* padding: 52px 190px; */
+    padding: 0% 12% 5%;
+    flex-direction: row;
+}
+
+.bmi-calculator h4 {
+    font-size: 1.75rem;
+}
+
+.bmi-calculator-chart {
+    width: 50%;
+}
+
+.bmi-calculator-chart table {
+    border-collapse: collapse;
+}
+
+.bmi-calculator-chart th,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.bmi-calculator-chart tbody {
+    font-size: 0.875rem;
+}
+
+/* BMI Calculator form */
+.bmi-calculator-form {
+    width: 50%;
+}
+
+.bmi-calculator-form>form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bmi-calculator-form input,
+select {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.bmi-calculator-form select>option {
+    color: #111111;
+}
+
+.bmi-calculator-form #select-factor {
+    grid-column: span 2;
+}
+
 /* responsive layout for small devices */
 @media screen and (max-width: 576px) {
     .banner-content {
@@ -260,7 +333,8 @@ nav {
     }
 
     .banner,
-    .run-easily-section {
+    .run-easily-section,
+    .bmi-calculator {
         flex-direction: column;
     }
 
@@ -277,7 +351,8 @@ nav {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .change-your-habit {
+    .change-your-habit,
+    .bmi-calculator {
         padding: 0px 20px;
     }
 
@@ -285,8 +360,11 @@ nav {
         margin: 30px;
     }
 
-    .running-person-img img {
+    .running-person-img img,
+    .bmi-calculator,
+    .bmi-calculator-chart {
         width: 100%;
         margin: auto;
     }
+
 }
