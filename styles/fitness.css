@@ -197,6 +197,7 @@ nav {
 .change-your-habit {
     padding: 0% 10%;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .section-title {
@@ -247,6 +248,10 @@ nav {
 }
 
 /* BMI Calculator section style */
+.bmi-calculator-section {
+    margin-bottom: 100px;
+}
+
 .bmi-section-title {
     width: 50%;
     margin: 100px auto;
@@ -256,8 +261,6 @@ nav {
 /* BMI Calculator chart style */
 .bmi-calculator {
     background-color: rgba(34, 34, 34, 1);
-    /* width: 75%; */
-    /* padding: 52px 190px; */
     padding: 0% 12% 5%;
     flex-direction: row;
 }
@@ -318,6 +321,45 @@ select {
     grid-column: span 2;
 }
 
+/* Meet our team section */
+.team-section {
+    margin-bottom: 100px;
+}
+
+.team-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.team-img img {
+    width: 100%;
+    height: 250px;
+    border-radius: 18px;
+}
+
+.team-img>div {
+    position: relative;
+}
+
+.team-img h4,
+p {
+    margin: 0;
+}
+
+.team-img p {
+    font-size: .875rem;
+}
+
+.trainer-img-text {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+}
+
 /* responsive layout for small devices */
 @media screen and (max-width: 576px) {
     .banner-content {
@@ -347,13 +389,15 @@ select {
         margin-left: 0.5px;
     }
 
-    .habit-container {
+    .habit-container,
+    .team-img {
         grid-template-columns: repeat(1, 1fr);
     }
 
     .change-your-habit,
     .bmi-calculator {
         padding: 0px 20px;
+
     }
 
     .run-easily {
@@ -361,10 +405,22 @@ select {
     }
 
     .running-person-img img,
+    .change-habit-section,
+    .run-easily-section,
     .bmi-calculator,
-    .bmi-calculator-chart {
+    .bmi-calculator-chart,
+    .team-section {
         width: 100%;
         margin: auto;
+    }
+
+    .banner,
+    .change-your-habit,
+    .habit-container,
+    .run-easily-section,
+    .bmi-calculator-section,
+    .team-section {
+        margin-bottom: 20px;
     }
 
 }
