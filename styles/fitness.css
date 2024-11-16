@@ -19,6 +19,7 @@
 body {
     background-color: black;
     /* margin: auto 200px; */
+    margin: 0 auto;
 }
 
 /* shared styles */
@@ -284,7 +285,8 @@ td {
     text-align: left;
 }
 
-.bmi-calculator-chart tbody {
+.bmi-calculator-chart tbody,
+footer section p {
     font-size: 0.875rem;
 }
 
@@ -346,7 +348,7 @@ select {
 }
 
 .team-img h4,
-p {
+.team-img p {
     margin: 0;
 }
 
@@ -360,8 +362,63 @@ p {
     left: 10px;
 }
 
+/* footer styles */
+footer {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer>section>div {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    gap: 100px;
+    padding: 60px;
+}
+
+.footer-title,
+footer>section>div>h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.footer-title {
+    font-size: 4.375rem;
+    font-weight: 900;
+    color: rgba(230, 83, 60, 1);
+    font-style: italic;
+}
+
+footer section div h3 {
+    font-size: 2rem;
+}
+
+footer section p {
+    line-height: 24px;
+}
+
+footer div ul {
+    padding: 0;
+}
+
+footer div li {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+footer hr {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+footer>section>p {
+    padding: 16px;
+    margin: 0;
+}
+
 /* responsive layout for small devices */
 @media screen and (max-width: 576px) {
+    .header {
+        margin: 20px;
+    }
+
     .banner-content {
         width: auto;
     }
@@ -390,7 +447,8 @@ p {
     }
 
     .habit-container,
-    .team-img {
+    .team-img,
+    footer>section>div {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -404,14 +462,25 @@ p {
         margin: 30px;
     }
 
-    .running-person-img img,
-    .change-habit-section,
+
+    .running-person-img img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .section-width-margin {
+        width: 100%;
+    }
+
     .run-easily-section,
     .bmi-calculator,
+    .bmi-section-title,
     .bmi-calculator-chart,
-    .team-section {
+    footer {
         width: 100%;
-        margin: auto;
+        margin: 0;
+        padding: 10px;
+        /* padding-left: 20px; */
     }
 
     .banner,
@@ -423,4 +492,8 @@ p {
         margin-bottom: 20px;
     }
 
+    footer>section>div {
+        gap: 0;
+        padding: 10px;
+    }
 }
