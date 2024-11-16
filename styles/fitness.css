@@ -323,6 +323,27 @@ select {
     grid-column: span 2;
 }
 
+/* Added extra section named office hr and appointment */
+
+.extra-section {
+    margin-bottom: 100px;
+}
+
+#office-hr {
+    font-size: 2rem;
+}
+
+.extra-section a:hover {
+    font-size: 1.25rem;
+    color: #E6533C;
+}
+
+.time-table {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
 /* Meet our team section */
 .team-section {
     margin-bottom: 100px;
@@ -416,7 +437,7 @@ footer>section>p {
 /* responsive layout for small devices */
 @media screen and (max-width: 576px) {
     .header {
-        margin: 20px;
+        padding: 20px;
     }
 
     .banner-content {
@@ -476,6 +497,7 @@ footer>section>p {
     .bmi-calculator,
     .bmi-section-title,
     .bmi-calculator-chart,
+    .extra-section,
     footer {
         width: 100%;
         margin: 0;
@@ -488,7 +510,8 @@ footer>section>p {
     .habit-container,
     .run-easily-section,
     .bmi-calculator-section,
-    .team-section {
+    .team-section,
+    .extra-section {
         margin-bottom: 20px;
     }
 
